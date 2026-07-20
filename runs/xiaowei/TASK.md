@@ -1,64 +1,116 @@
-# 当前任务（第 1 批：base 底图 · 第 4 次 = 改图不重画）— ChatGPT 版
+# 当前任务（第 2 批：idle + running-right 两条动画条）— ChatGPT 版
 
-第 3 版眼型矫枉过正（八字哭包眼、吻部变扁），第 2 版整体最可爱。
-本次**只发第 2 版那张图给 ChatGPT 做局部修改**：只动眼睑形状，
-其他一切保持原样。
+base 已定稿（就是你最喜欢的第 2 版）✅
+本批生成两条动画条，是后面所有行的"身份+步态"试金石。
 
-⚠️ 这次只附 1 张图：`runs/xiaowei/incoming/base-attempt-2.png`
-（就是你觉得最可爱那版），**不要附照片**，避免 ChatGPT 重画。
+**两条分开发，每条单独开一轮对话发给 ChatGPT 更稳。**
 
-1. **发给 ChatGPT**：把下面代码块整段复制到 ChatGPT，同时**附上 4 张小味的照片**
-   （就是你拍的这 4 张：`20260720-105443(13).jpg`、`(6)`、`(10)`、`(1)`；
-   手机相册里的原图即可，也可以从仓库 `runs/xiaowei/references/` 里保存）。
-2. **下载结果**：让 ChatGPT 生成后，**长按/点击下载原图文件**（PNG 或 WebP 都行）。
-   ⚠️ 不要截图——截图会压缩画质、可能带界面元素。
-3. **传回仓库**：在 GitHub 网页版进入 `runs/xiaowei/incoming/` 目录 →
-   Add file → Upload files，把图片传上去（文件名改成 `base.png` 最好；
-   传到 main 分支也没关系，Claude 会自己合并），然后告诉 Claude"base 好了"。
+每条都要附 2 张图（都在仓库里，先保存到手机）：
+1. `runs/xiaowei/references/canonical-base.png`（身份基准，就是定稿 base）
+2. 对应的排版参考图（见各小节）
 
-## 发给 ChatGPT 的内容（只附 base-attempt-2.png 这一张图）
+生成后下载原图，上传到 `runs/xiaowei/incoming/`，文件名分别为
+`idle.png` 和 `running-right.png`，然后告诉 Claude。
+
+---
+
+## 任务 2a：idle（6 帧安静待机）
+
+附图：`canonical-base.png` + `runs/xiaowei/references/layout-guides/idle.png`
 
 ```text
-请对我附上的这张小猫角色图做一次局部修改（image edit）。
-不要重画、不要改构图，除了眼睛以外的一切都保持和原图完全一致：
-毛色、毛发质感、飞毛、歪头角度、坐姿、尾巴、耳朵、鼻子、嘴、
-背景纯品红 #FF00FF，全部原样保留。
+请生成一张横向长条动画帧图（宽横版画布）。附图 1 是角色身份基准，
+附图 2 是排版参考（只用来理解 6 个等宽格子的间距和居中方式，
+不要把参考图里的任何线框、格子或标记画进结果）。
 
-只修改眼睛，按以下要求：
+Create one horizontal animation strip: exactly 6 full-body frames of the
+attached kitten character, in one left-to-right row, evenly spaced as 6
+invisible equal-width slots, one centered complete pose per slot, no
+overlap, no clipping, no empty slots, on a perfectly flat pure magenta
+#FF00FF background covering the whole canvas.
 
-Edit ONLY the eyes of the attached kitten character. Keep everything else pixel-faithful to the original image: fur color, fur texture, flyaway strands, head tilt, pose, tail, ears, nose, mouth, and the flat magenta #FF00FF background.
+Identity: EXACTLY the same kitten as attached image 1 in every frame —
+same soft pale cream-golden fluffy fur with messy flyaway strands, same
+golden shaded tipping on head/back/tail, same pale cream chest ruff, same
+big glossy round blue-grey eyes with catchlights and shy worried gaze,
+same tiny pink nose, small tucked ears, chibi big-head proportions, same
+sitting pose and slight head tilt as the base image. Same painting style.
 
-Eye edit: reshape the eyelids so the eyes are no longer perfectly round. Lower the upper eyelid into a nearly straight, slightly heavy line that cuts flat across the top of the iris — like the eye shape of a mildly worried kitten. Keep the outer and inner corners at the SAME height as the original (do NOT slant the eyes downward or upward — no sad puppy angle). The lower lid keeps its round curve. Keep the same eye position and spacing; overall eye height becomes slightly shorter because of the lowered upper lid. Show a bit more pale blue-grey iris by making the dark pupils slightly smaller. Keep the soft catchlights.
+State: idle — a calm quiet resting loop. Across the 6 frames show ONLY
+subtle motion: gentle breathing (body rises/settles slightly), one tiny
+blink around the middle frames, a very slight head or body bob, tiny fur
+sway. The pose, facing direction, silhouette and expression stay
+essentially the same in all frames. Frame 1 and frame 6 must look almost
+identical so the loop plays smoothly. The motion must still be visible —
+do not output 6 identical copies.
 
-The result should read as the same cute kitten, just with her signature calm "flat-topped" worried eyes instead of wide startled round eyes — still adorable, NOT sad, NOT crying, NOT droopy.
+Do NOT show: walking, waving, jumping, big gestures, emotional changes,
+new props, shadows, glows, motion lines, text, borders, or scenery.
+Keep magenta and pink tones out of the kitten itself.
 
-要求总结：只把两只眼睛的上眼睑改平（像有点担心事情的小猫半敛着眼），
-内外眼角高度保持不变，绝不能画成外角下垂的八字哭包眼；
-瞳孔略缩小、多露一点蓝灰虹膜；其余全部不动。
-改完请给我原始尺寸的图片文件下载。
+要求：宽横版画布；6 个姿势一行排开、等距居中、互不重叠；
+纯平品红背景；第 1 帧和第 6 帧几乎一样；只有呼吸/眨眼/微晃级别的
+安静小动作。生成后给我原始尺寸文件下载。
 ```
 
-## Claude 收图后的自查项（供参考）
+## 任务 2b：running-right（8 帧向右跑）
 
-- 是不是同一只猫：毛色、渐层晕染、圆脸肉颊、蓝灰大眼、怯生生的表情
-- 背景是否纯平品红，猫身上有没有沾品红/粉色
-- 全身完整、居中、无阴影无文字无特效
+附图：`canonical-base.png` + `runs/xiaowei/references/layout-guides/running-right.png`
 
-不合格的话 Claude 会给出修改后的提示词重试。
+```text
+请生成一张横向长条动画帧图（宽横版画布）。附图 1 是角色身份基准，
+附图 2 是排版参考（只用来理解 8 个等宽格子的间距和居中方式，
+不要把参考图里的任何线框、格子或标记画进结果）。
+
+Create one horizontal animation strip: exactly 8 full-body frames of the
+attached kitten character, in one left-to-right row, evenly spaced as 8
+invisible equal-width slots, one centered complete pose per slot, no
+overlap, no clipping, no empty slots, on a perfectly flat pure magenta
+#FF00FF background covering the whole canvas.
+
+Identity: EXACTLY the same kitten as attached image 1 in every frame —
+same soft pale cream-golden fluffy fur with flyaway strands, same golden
+shaded tipping, same pale cream chest ruff, same big glossy round
+blue-grey eyes with shy worried gaze, same tiny pink nose, small tucked
+ears, chibi big-head proportions, same painting style.
+
+State: running-right — the kitten is being dragged/scurrying to the
+RIGHT. Every frame faces right (nose, eyes and body pointing to the
+viewer's right) and reads as traveling right. Show the run through body
+and leg poses only: alternating gait across the 8 frames — legs extend
+and gather in different phases (reach, pull, tuck, push), body leans
+slightly rightward/forward, fluffy fur and tail follow the motion with a
+slight lag. The 8 frames must form one smooth cycle where frame 8 leads
+back into frame 1, and the leg positions clearly DIFFER between
+neighboring frames (no repeated near-identical stride).
+
+Keep the same apparent size and the same ground baseline in all frames.
+
+Do NOT draw: speed lines, dust, motion trails, blur, floor shadows, or
+any detached effects; no text, borders, scenery. Keep magenta/pink tones
+out of the kitten.
+
+要求：宽横版画布；8 个姿势一行排开、等距居中、互不重叠；全部朝右、
+明显在向右跑；相邻帧腿部姿势要有明显差异、8 帧构成循环步态；
+大小和地面基线保持一致；纯平品红背景。生成后给我原始尺寸文件下载。
+```
+
+---
+
+## 常见翻车点（不合格 Claude 会退回重试）
+
+- 帧数不对（idle 必须 6 个，running-right 必须 8 个）
+- 相邻姿势互相重叠或贴边裁切
+- 把排版参考图的格子线画进了结果
+- 猫和 base 不像（脸型/毛色/眼睛变了）
+- running-right 有朝左或朝正面的帧
+- 出现阴影、速度线、尘土等特效
 
 ## 批次进度
 
-- [ ] 1. base 底图 ← **当前**
-- [ ] 2. idle、running-right 两条 8 帧动画条（running-left 由 Claude 镜像派生）
+- [x] 1. base 底图 ✅（定稿：第 2 版）
+- [ ] 2. idle、running-right ← **当前**（running-left 由 Claude 镜像派生）
 - [ ] 3. waving、jumping、failed、waiting、running、review 六条动画条
 - [ ] 4. look-cardinals 四方位锚点条
 - [ ] 5. look-row-9（8 个视线方向）
 - [ ] 6. look-row-10（8 个视线方向）
-
-## 换用 ChatGPT 的注意事项（Claude 已考虑）
-
-- ChatGPT 生成的品红背景可能有轻微色偏/噪点：没关系，流程里的提帧和
-  despill 脚本按阈值处理，最终以确定性校验为准。
-- 后面批次的 8 帧动画条对"恰好 8 个分离姿势"要求较高，ChatGPT 可能需要
-  重试几次，属于正常情况；每批任务里会给出针对性的提示词。
-- 生成 8 帧条时请选横版尺寸（任务里会注明）。

@@ -7,7 +7,7 @@
     {
       "id": "base",
       "kind": "base-pet",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/base-pet.md",
       "input_images": [
         {
@@ -31,7 +31,9 @@
       "depends_on": [],
       "generation_skill": "$imagegen",
       "requires_grounded_generation": true,
-      "allow_prompt_only_generation": false
+      "allow_prompt_only_generation": false,
+      "source_path": "incoming/base-attempt-2.png",
+      "completed_at": "2026-07-20T06:22:34Z"
     },
     {
       "id": "idle",
