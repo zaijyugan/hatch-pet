@@ -1,8 +1,8 @@
 {
   "pet_id": "xiaowei",
   "display_name": "\u5c0f\u5473",
-  "description": "\u4e00\u53ea\u6709\u4e9b\u80c6\u5c0f\u76844\u4e2a\u6708\u5927\u91d1\u6e10\u5c42\u82f1\u56fd\u957f\u6bdb\u5c0f\u732b\uff0c\u84ec\u677e\u5976\u6cb9\u91d1\u957f\u6bdb\uff0c\u84dd\u7070\u8272\u5927\u5706\u773c\u3002.",
-  "created_at": "2026-07-20T03:04:02.891343+00:00",
+  "description": "\u4e00\u53ea\u6709\u4e9b\u80c6\u5c0f\u76844\u4e2a\u6708\u5927\u91d1\u6e10\u5c42\u82f1\u56fd\u957f\u6bdb\u5c0f\u732b\uff0c\u84ec\u677e\u5976\u6cb9\u91d1\u957f\u6bdb\uff0c\u6807\u5fd7\u6027\u7684\u5200\u5200\u773c\u3002.",
+  "created_at": "2026-07-20T05:48:06.820417+00:00",
   "sprite_version_number": 2,
   "atlas": {
     "columns": 8,
@@ -295,10 +295,10 @@
     "selection": "auto",
     "score": 206.71
   },
-  "pet_notes": "Xiaowei is a timid 4-month-old golden shaded British Longhair kitten. Very fluffy long cream-golden fur with warmer golden-brown shaded tipping on the head, back and plumed tail; pale cream chest, muzzle and paws. Round chubby-cheeked face with a short (but not flat) muzzle, tiny pink nose, small rounded ears tucked into fur, large round blue-grey eyes with a slightly worried, shy expression. Compact round chibi-friendly body. Personality: gentle, cautious, easily startled, endearing.",
+  "pet_notes": "Xiaowei is a timid 4-month-old golden shaded British Longhair kitten. Very fluffy long, soft muted pale cream-golden fur, slightly messy with wispy flyaway strands; warmer golden-brown shaded tipping on the head, back and plumed tail; prominent pale cream chest ruff, pale muzzle and paws. Round chubby-cheeked face with fluffy cheek ruffs, short (but not flat) muzzle, tiny pink nose, very small rounded ears mostly tucked into the head fur. Signature eyes - NOT round: the upper eyelid is straight and slightly heavy, cutting flat across the top of the large blue-grey iris and drooping a little toward the outer corners; the lower lid curves round; overall a half-moon / 'D'-rotated-flat-side-up shape with dark eyeliner-like rims, small pupils and lots of pale blue-grey iris, giving a permanently mildly worried, aggrieved, innocent look. Eyes open fully round only when startled or looking up. Compact round chibi-friendly body. Personality: gentle, cautious, easily startled, endearing.",
   "style_preset": "auto",
-  "style_notes": "Soft cute stylized mascot rendition of the real kitten photos: keep the true fur palette (cream-golden with warm shaded tipping, pale chest), the round British Longhair face with chubby cheeks and short muzzle, worried shy eyes and fluffy silhouette; simplify fur into readable tufts so details stay clear at 192x208; no photorealism, no text.",
-  "style_contract": "Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `auto`: Infer the most appropriate pet-safe style from the user request and reference images, then keep that exact style consistent across every row. User style notes: Soft cute stylized mascot rendition of the real kitten photos: keep the true fur palette (cream-golden with warm shaded tipping, pale chest), the round British Longhair face with chubby cheeks and short muzzle, worried shy eyes and fluffy silhouette; simplify fur into readable tufts so details stay clear at 192x208; no photorealism, no text..",
+  "style_notes": "Soft cute stylized mascot rendition of the real kitten photos: keep the true muted pale cream-golden palette with warm shaded tipping and pale chest ruff, the round British Longhair face with chubby cheeks and short muzzle, the signature flat-topped half-moon 'worried' eyes, and the fluffy slightly-messy silhouette; chibi-leaning big-head proportions; simplify fur into readable tufts so details stay clear at 192x208; no photorealism, no text.",
+  "style_contract": "Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `auto`: Infer the most appropriate pet-safe style from the user request and reference images, then keep that exact style consistent across every row. User style notes: Soft cute stylized mascot rendition of the real kitten photos: keep the true muted pale cream-golden palette with warm shaded tipping and pale chest ruff, the round British Longhair face with chubby cheeks and short muzzle, the signature flat-topped half-moon 'worried' eyes, and the fluffy slightly-messy silhouette; chibi-leaning big-head proportions; simplify fur into readable tufts so details stay clear at 192x208; no photorealism, no text..",
   "brand_name": "",
   "brand_brief": "",
   "brand_sources": [],

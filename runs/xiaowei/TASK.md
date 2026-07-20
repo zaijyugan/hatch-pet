@@ -27,7 +27,7 @@ Create one clean full-body character sprite of the exact kitten shown in the att
 
 1. COLOR: The previous attempt is too orange and saturated. Match the photos instead: soft muted pale cream-golden fur with gentle warm golden-brown shaded tipping on the head, back and plumed tail; overall paler, softer, lower-saturation palette with soft lighting, like the real kitten.
 
-2. EYES: The previous attempt's eyes are too huge and startled-looking, with oversized dark pupils. Make the eyes moderately large (clearly smaller than the previous attempt), perfectly round, wide-set, showing plenty of soft blue-grey iris around a normal-sized pupil, with soft catchlights. The gaze should be a gentle, shy, slightly-upward worried glance — timid and endearing, never startled, never sad.
+2. EYES — this is Xiaowei's signature feature, get the SHAPE right: her eyes are NOT round. The upper eyelid is straight and slightly heavy, cutting flat across the top of the large blue-grey iris and drooping a little toward the outer corners; the lower lid curves round. The overall eye shape is a half-moon / a "D" rotated flat-side-up. Dark eyeliner-like rims around the eyes, small pupils, and lots of pale blue-grey iris showing. This flat-topped eye shape is what gives her the permanently mildly worried, aggrieved, innocent look. Moderately large (clearly smaller than the previous attempt), wide-set, soft catchlights. Never perfectly round (she only opens them round when startled), never huge, never sad-droopy.
 
 3. POSE: Make the sitting pose read as timid: body slightly hunched and huddled into itself, front paws tucked close together beneath the chest ruff, shoulders low, head tilted a few degrees — like a shy kitten trying to look small. Fluffy tail curled beside the body.
 
@@ -37,9 +37,10 @@ Place a single centered full-body pose on a perfectly flat pure magenta #FF00FF 
 
 要求：整张画布背景必须是纯平品红色 #FF00FF，无渐变无纹理；
 画面里只有一只居中的全身小猫；不要阴影、不要文字、不要特效。
-本次三个修改重点：①毛色更淡更柔的奶油金（别橘）；②眼睛比上一版
-明显收小、露出更多蓝灰虹膜、怯生生往上看（别瞪大受惊）；③坐姿
-缩成一团、前爪并拢内收，显得胆小想把自己藏起来。
+本次三个修改重点：①毛色更淡更柔的奶油金（别橘）；②眼型改成小味
+标志性的"刀刀眼"——上眼睑平直微沉、外眼角略下压、下眼睑圆弧，
+整体上平下圆的半月形，带深色眼线圈、小瞳孔、大面积蓝灰虹膜，
+不许画正圆眼；③坐姿缩成一团、前爪并拢内收，显得胆小想藏起来。
 生成后请给我原始尺寸的图片文件下载。
 ```
 
