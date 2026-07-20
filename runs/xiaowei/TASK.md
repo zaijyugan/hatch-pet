@@ -1,12 +1,7 @@
-# 当前任务：idle 重传 + 第 3 批六条动画条 — ChatGPT 版
+# 当前任务：第 3 批六条动画条 — ChatGPT 版
 
-进度：base ✅ · running-right ✅（已通过质检）· running-left ✅（Claude 已镜像派生，无需生成）
-
-## ⚠️ 先处理：idle 重新上传
-
-你上传的 `idle.jpg` 只有 120x40 像素，是个缩略图，无法使用。
-如果 ChatGPT 那边的生成结果还在：**重新下载原始尺寸文件**再上传一次
-（命名 `idle.png`）。如果已经找不到了，用下面"任务 2a"的提示词重新生成。
+进度：base ✅ · idle ✅ · running-right ✅ · running-left ✅（镜像派生）
+标准动画行还差六条，全在下面，可并行。
 
 ---
 
@@ -165,34 +160,10 @@ No shadows, no text, no scenery. Keep magenta/pink out of the kitten.
 
 ---
 
-## 任务 2a：idle 重新生成（仅当找不到上次的原图时才需要）
-
-附：`canonical-base.png` + `layout-guides/idle.png`
-
-```text
-请生成一张横向长条动画帧图（宽横版画布）。附图 1 是角色身份基准，附图 2 只用于理解 6 个等宽格子的排版（不要画出格子线）。
-
-Create one horizontal animation strip: exactly 6 full-body frames of the attached kitten character, left to right, evenly spaced in 6 invisible equal-width slots, one centered pose per slot, no overlap or clipping, on a perfectly flat pure magenta #FF00FF background.
-
-Identity: EXACTLY the same kitten as image 1 in every frame — same fur, colors, face, eyes, proportions, sitting pose and painting style.
-
-State: idle breathing-and-blink loop. This is a 6-frame ANIMATION — every neighboring pair of frames must differ visibly:
-Frame 1: resting pose, eyes open, body settled (exhaled), head tilted slightly left.
-Frame 2: inhale begins — chest and body rise slightly (silhouette 2-3% taller), head lifts a touch.
-Frame 3: full inhale — body tallest, chest ruff slightly expanded, head nearly upright.
-Frame 4: eyes fully CLOSED in a soft blink, body sinking back down.
-Frame 5: eyes half-open, body settling, tail tip curls slightly.
-Frame 6: back to resting, very close to frame 1, closing the loop.
-
-Real pose changes only (body height, head angle, ear angle, tail tip) — not re-rendered fur noise. No walking/waving/jumping, no shadows, no text, no effects. Keep magenta/pink out of the kitten.
-
-要求：每相邻两帧必须有肉眼可见的姿态差异；第 4 帧闭眼；第 6 帧回到与第 1 帧几乎相同。生成后给我原始尺寸文件下载。
-```
-
 ## 批次进度
 
 - [x] 1. base 底图 ✅
-- [ ] 2. idle（等待重传原图）/ running-right ✅ / running-left ✅（镜像）
+- [x] 2. idle ✅ / running-right ✅ / running-left ✅（镜像）
 - [ ] 3. waving、jumping、failed、waiting、running、review ← **当前，可并行**
 - [ ] 4. look-cardinals 四方位锚点条
 - [ ] 5. look-row-9（8 个视线方向）

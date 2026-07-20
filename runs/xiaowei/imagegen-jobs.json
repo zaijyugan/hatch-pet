@@ -38,7 +38,7 @@
     {
       "id": "idle",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/idle.md",
       "retry_prompt_file": "prompts/row-retries/idle.md",
       "input_images": [
@@ -84,7 +84,9 @@
         "may_derive": false,
         "reason": "no deterministic derivation is configured for this state"
       },
-      "mirror_policy": {}
+      "mirror_policy": {},
+      "source_path": "incoming/idle.png",
+      "completed_at": "2026-07-20T07:38:57Z"
     },
     {
       "id": "running-right",

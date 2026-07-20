@@ -5,12 +5,12 @@
     "idle"
   ],
   "errors": [
-    "idle frame 00 has 1023 non-transparent pixels close to the chroma key",
-    "idle frame 01 has 1017 non-transparent pixels close to the chroma key",
-    "idle frame 02 has 1020 non-transparent pixels close to the chroma key",
-    "idle frame 03 has 1040 non-transparent pixels close to the chroma key",
-    "idle frame 04 has 1021 non-transparent pixels close to the chroma key",
-    "idle frame 05 has 1037 non-transparent pixels close to the chroma key"
+    "idle frame 00 has 906 non-transparent pixels close to the chroma key",
+    "idle frame 01 has 959 non-transparent pixels close to the chroma key",
+    "idle frame 02 has 1018 non-transparent pixels close to the chroma key",
+    "idle frame 03 has 927 non-transparent pixels close to the chroma key",
+    "idle frame 04 has 1027 non-transparent pixels close to the chroma key",
+    "idle frame 05 has 880 non-transparent pixels close to the chroma key"
   ],
   "warnings": [],
   "rows": [
@@ -21,12 +21,12 @@
       "extraction_method": "components",
       "ok": false,
       "errors": [
-        "idle frame 00 has 1023 non-transparent pixels close to the chroma key",
-        "idle frame 01 has 1017 non-transparent pixels close to the chroma key",
-        "idle frame 02 has 1020 non-transparent pixels close to the chroma key",
-        "idle frame 03 has 1040 non-transparent pixels close to the chroma key",
-        "idle frame 04 has 1021 non-transparent pixels close to the chroma key",
-        "idle frame 05 has 1037 non-transparent pixels close to the chroma key"
+        "idle frame 00 has 906 non-transparent pixels close to the chroma key",
+        "idle frame 01 has 959 non-transparent pixels close to the chroma key",
+        "idle frame 02 has 1018 non-transparent pixels close to the chroma key",
+        "idle frame 03 has 927 non-transparent pixels close to the chroma key",
+        "idle frame 04 has 1027 non-transparent pixels close to the chroma key",
+        "idle frame 05 has 880 non-transparent pixels close to the chroma key"
       ],
       "warnings": [],
       "frames": [
@@ -35,90 +35,90 @@
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/idle/frames/idle/00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23706,
+          "nontransparent_pixels": 22481,
           "bbox": [
-            16,
+            20,
             5,
-            176,
+            171,
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1023
+          "chroma_adjacent_pixels": 906
         },
         {
           "index": 1,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/idle/frames/idle/01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23651,
+          "nontransparent_pixels": 22091,
           "bbox": [
-            16,
+            22,
             5,
-            175,
+            169,
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1017
+          "chroma_adjacent_pixels": 959
         },
         {
           "index": 2,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/idle/frames/idle/02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23773,
+          "nontransparent_pixels": 22819,
           "bbox": [
-            16,
+            22,
             5,
-            176,
+            170,
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1020
+          "chroma_adjacent_pixels": 1018
         },
         {
           "index": 3,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/idle/frames/idle/03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23600,
+          "nontransparent_pixels": 22696,
           "bbox": [
-            16,
+            19,
             5,
-            175,
+            173,
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1040
+          "chroma_adjacent_pixels": 927
         },
         {
           "index": 4,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/idle/frames/idle/04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23498,
+          "nontransparent_pixels": 24830,
           "bbox": [
-            16,
+            12,
             5,
-            175,
+            179,
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1021
+          "chroma_adjacent_pixels": 1027
         },
         {
           "index": 5,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/idle/frames/idle/05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23641,
+          "nontransparent_pixels": 21863,
           "bbox": [
-            16,
+            26,
             5,
-            175,
+            165,
             203
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1037
+          "chroma_adjacent_pixels": 880
         }
       ]
     }
