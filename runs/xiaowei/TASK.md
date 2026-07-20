@@ -1,8 +1,9 @@
-# 当前任务（第 1 批：base 底图 · 第 2 次重试）— ChatGPT 版
+# 当前任务（第 1 批：base 底图 · 第 3 次重试）— ChatGPT 版
 
-第 1 次结果技术合格但不够可爱、不够像小味。本次调整方向：
-**保持半写实毛发质感，但更萌（头身比更大、眼睛更大更亮、微歪头）、
-更贴近照片里的真实特征（蓬乱飞毛、深金渐层、奶白围脖、担忧的眉眼）。**
+第 2 版已接近，但对比真猫还差三点，本次专修：
+**毛色改淡改柔（奶油金，不要饱和橘）、眼睛稍收小并露出更多蓝灰虹膜
+（怯生生上望，不要惊讶瞪大）、坐姿更缩更怯（前爪并拢往里收）。**
+保留第 2 版成功之处：乱蓬飞毛、微歪头、深金渐层、奶白围脖。
 
 生图用 ChatGPT。你只需要三步：
 
@@ -19,23 +20,32 @@
 
 ```text
 请根据我附上的 4 张真实小猫照片重新生成一张桌面宠物角色底图。
-上一版的问题：太像普通的"完美赛级猫"，不够可爱，也不够像照片里这只猫。
-这次请严格按以下要求：
+上一版（也附上了，标注为 previous attempt）方向对了但还差三点：
+毛色太橘太饱和、眼睛大得发惊、坐姿不够胆怯。这次请严格按以下要求：
 
-Create one clean full-body character sprite of the exact kitten shown in the attached photos — a timid 4-month-old golden shaded British Longhair named 小味 (Xiaowei).
+Create one clean full-body character sprite of the exact kitten shown in the attached reference photos — a timid 4-month-old golden shaded British Longhair named 小味 (Xiaowei). A previous attempt is also attached: keep its messy flyaway fur, slight head tilt, golden shaded tipping and pale cream chest ruff, but fix the following three problems.
 
-Match THIS specific kitten, not a generic kitten. Copy these features from the photos: slightly messy, wispy flyaway fur (not perfectly groomed); noticeably darker warm golden-brown shaded tipping on the top of the head, back and plumed tail; a prominent pale cream ruff on the chest and pale muzzle/paws; very small rounded ears mostly tucked into the fluffy head fur; large round blue-grey eyes with the photos' distinctive slightly-worried, shy puppy-dog gaze (soft inner-brow feel, NOT sad or droopy); tiny pink nose; round chubby cheeks with fluffy cheek ruffs; short muzzle (British Longhair, not a flat Persian face).
+1. COLOR: The previous attempt is too orange and saturated. Match the photos instead: soft muted pale cream-golden fur with gentle warm golden-brown shaded tipping on the head, back and plumed tail; overall paler, softer, lower-saturation palette with soft lighting, like the real kitten.
 
-Make it cuter than realistic proportions while keeping the semi-realistic soft fur rendering: enlarge the head to roughly the same size as the body (chibi-leaning head-to-body ratio), make the eyes bigger, rounder and glossier with bright catchlights, tilt the head a few degrees to one side for shy charm, keep the body compact, round and short-legged, with the fluffy tail curled up beside the body. Fur stays softly painted and fluffy but with slightly simplified, readable tufts so the character remains clear when displayed at 192x208 pixels. No text.
+2. EYES: The previous attempt's eyes are too huge and startled-looking, with oversized dark pupils. Make the eyes moderately large (clearly smaller than the previous attempt), perfectly round, wide-set, showing plenty of soft blue-grey iris around a normal-sized pupil, with soft catchlights. The gaze should be a gentle, shy, slightly-upward worried glance — timid and endearing, never startled, never sad.
+
+3. POSE: Make the sitting pose read as timid: body slightly hunched and huddled into itself, front paws tucked close together beneath the chest ruff, shoulders low, head tilted a few degrees — like a shy kitten trying to look small. Fluffy tail curled beside the body.
+
+Keep everything else: very small rounded ears mostly tucked into the fluffy head fur, tiny pink nose, round chubby cheeks with fluffy cheek ruffs, short British Longhair muzzle (not a flat Persian face), chibi-leaning big-head proportions, compact round short-legged body, semi-realistic softly painted fur simplified into readable tufts so it stays clear at 192x208 pixels. No text.
 
 Place a single centered full-body pose on a perfectly flat pure magenta #FF00FF chroma-key background covering the entire canvas. Full pet visible, compact, easy to animate. No scenery, text, borders, shadows, glows, detached effects, or props. Keep #FF00FF and similar pink/magenta tones out of the fur, eyes, nose and highlights.
 
 要求：整张画布背景必须是纯平品红色 #FF00FF，无渐变无纹理；
-画面里只有一只居中的全身小猫；不要阴影、不要文字、不要装饰特效。
-重点：要像照片里这只猫（乱蓬蓬的飞毛、头背深金渐层、胸口奶白围脖、
-担忧又软萌的眼神），同时头更大、眼更大更亮、微微歪头，更可爱。
+画面里只有一只居中的全身小猫；不要阴影、不要文字、不要特效。
+本次三个修改重点：①毛色更淡更柔的奶油金（别橘）；②眼睛比上一版
+明显收小、露出更多蓝灰虹膜、怯生生往上看（别瞪大受惊）；③坐姿
+缩成一团、前爪并拢内收，显得胆小想把自己藏起来。
 生成后请给我原始尺寸的图片文件下载。
 ```
+
+**注意**：这次发 ChatGPT 时除了 4 张照片，**把上一版生成图也一起附上**
+（仓库路径 `runs/xiaowei/incoming/base-attempt-2.png`），让它知道
+"保留什么、修什么"。
 
 ## Claude 收图后的自查项（供参考）
 
