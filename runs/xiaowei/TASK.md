@@ -14,7 +14,11 @@ base 已定稿（就是你最喜欢的第 2 版）✅
 
 ---
 
-## 任务 2a：idle（6 帧安静待机）
+## 任务 2a：idle（6 帧安静待机 · 第 2 次重试）
+
+第 1 版被判定"实质静止"：除眨眼帧外 5 帧完全相同、无呼吸起伏
+（Claude 已量化验证：轮廓高度 6 帧一模一样、质心位移 <1px）。
+本次改为逐帧编排，每帧有明确的小动作。
 
 附图：`canonical-base.png` + `runs/xiaowei/references/layout-guides/idle.png`
 
@@ -30,27 +34,39 @@ overlap, no clipping, no empty slots, on a perfectly flat pure magenta
 #FF00FF background covering the whole canvas.
 
 Identity: EXACTLY the same kitten as attached image 1 in every frame —
-same soft pale cream-golden fluffy fur with messy flyaway strands, same
-golden shaded tipping on head/back/tail, same pale cream chest ruff, same
-big glossy round blue-grey eyes with catchlights and shy worried gaze,
-same tiny pink nose, small tucked ears, chibi big-head proportions, same
-sitting pose and slight head tilt as the base image. Same painting style.
+same fur, colors, face, eyes, proportions, sitting pose and painting
+style as the base image.
 
-State: idle — a calm quiet resting loop. Across the 6 frames show ONLY
-subtle motion: gentle breathing (body rises/settles slightly), one tiny
-blink around the middle frames, a very slight head or body bob, tiny fur
-sway. The pose, facing direction, silhouette and expression stay
-essentially the same in all frames. Frame 1 and frame 6 must look almost
-identical so the loop plays smoothly. The motion must still be visible —
-do not output 6 identical copies.
+State: idle breathing-and-blink loop. This is a 6-frame ANIMATION — every
+neighboring pair of frames must differ visibly. Follow this exact
+frame-by-frame plan:
+
+Frame 1: resting pose, eyes open, body settled (exhaled), head tilted
+slightly left.
+Frame 2: inhale begins — chest and body rise slightly (whole silhouette
+about 2-3% taller), head lifts a touch, ears perk minimally.
+Frame 3: full inhale — body at its tallest, fluffy chest ruff slightly
+expanded, head nearly upright.
+Frame 4: eyes fully CLOSED in a soft blink, body starting to sink back
+down, head easing right-of-center.
+Frame 5: eyes half-open, body continuing to settle, tail tip curls
+slightly.
+Frame 6: back to resting pose very close to frame 1 (eyes open, body
+settled) so the loop closes smoothly.
+
+The kitten stays seated and calm throughout — the changes are small but
+must be REAL pose changes (body height, head angle, ear angle, tail-tip
+position), not just re-rendered fur noise. Do not output identical
+copies.
 
 Do NOT show: walking, waving, jumping, big gestures, emotional changes,
 new props, shadows, glows, motion lines, text, borders, or scenery.
 Keep magenta and pink tones out of the kitten itself.
 
-要求：宽横版画布；6 个姿势一行排开、等距居中、互不重叠；
-纯平品红背景；第 1 帧和第 6 帧几乎一样；只有呼吸/眨眼/微晃级别的
-安静小动作。生成后给我原始尺寸文件下载。
+要求：宽横版画布；6 个姿势一行排开、等距居中、互不重叠；纯平品红
+背景。这是动画：按上面的逐帧计划画，每相邻两帧必须有肉眼可见的
+姿态差异（身体高度/头角度/耳朵/尾巴尖），第 4 帧闭眼眨眼，
+第 6 帧回到与第 1 帧几乎相同。生成后给我原始尺寸文件下载。
 ```
 
 ## 任务 2b：running-right（8 帧向右跑）
