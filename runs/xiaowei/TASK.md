@@ -1,11 +1,11 @@
-# 当前任务（第 1 批：base 底图 · 第 3 次重试）— ChatGPT 版
+# 当前任务（第 1 批：base 底图 · 第 4 次 = 改图不重画）— ChatGPT 版
 
-第 2 版已接近，但对比真猫还差三点，本次专修：
-**毛色改淡改柔（奶油金，不要饱和橘）、眼睛稍收小并露出更多蓝灰虹膜
-（怯生生上望，不要惊讶瞪大）、坐姿更缩更怯（前爪并拢往里收）。**
-保留第 2 版成功之处：乱蓬飞毛、微歪头、深金渐层、奶白围脖。
+第 3 版眼型矫枉过正（八字哭包眼、吻部变扁），第 2 版整体最可爱。
+本次**只发第 2 版那张图给 ChatGPT 做局部修改**：只动眼睑形状，
+其他一切保持原样。
 
-生图用 ChatGPT。你只需要三步：
+⚠️ 这次只附 1 张图：`runs/xiaowei/incoming/base-attempt-2.png`
+（就是你觉得最可爱那版），**不要附照片**，避免 ChatGPT 重画。
 
 1. **发给 ChatGPT**：把下面代码块整段复制到 ChatGPT，同时**附上 4 张小味的照片**
    （就是你拍的这 4 张：`20260720-105443(13).jpg`、`(6)`、`(10)`、`(1)`；
@@ -16,37 +16,27 @@
    Add file → Upload files，把图片传上去（文件名改成 `base.png` 最好；
    传到 main 分支也没关系，Claude 会自己合并），然后告诉 Claude"base 好了"。
 
-## 发给 ChatGPT 的内容（附 4 张照片一起发）
+## 发给 ChatGPT 的内容（只附 base-attempt-2.png 这一张图）
 
 ```text
-请根据我附上的 4 张真实小猫照片重新生成一张桌面宠物角色底图。
-上一版（也附上了，标注为 previous attempt）方向对了但还差三点：
-毛色太橘太饱和、眼睛大得发惊、坐姿不够胆怯。这次请严格按以下要求：
+请对我附上的这张小猫角色图做一次局部修改（image edit）。
+不要重画、不要改构图，除了眼睛以外的一切都保持和原图完全一致：
+毛色、毛发质感、飞毛、歪头角度、坐姿、尾巴、耳朵、鼻子、嘴、
+背景纯品红 #FF00FF，全部原样保留。
 
-Create one clean full-body character sprite of the exact kitten shown in the attached reference photos — a timid 4-month-old golden shaded British Longhair named 小味 (Xiaowei). A previous attempt is also attached: keep its messy flyaway fur, slight head tilt, golden shaded tipping and pale cream chest ruff, but fix the following three problems.
+只修改眼睛，按以下要求：
 
-1. COLOR: The previous attempt is too orange and saturated. Match the photos instead: soft muted pale cream-golden fur with gentle warm golden-brown shaded tipping on the head, back and plumed tail; overall paler, softer, lower-saturation palette with soft lighting, like the real kitten.
+Edit ONLY the eyes of the attached kitten character. Keep everything else pixel-faithful to the original image: fur color, fur texture, flyaway strands, head tilt, pose, tail, ears, nose, mouth, and the flat magenta #FF00FF background.
 
-2. EYES — this is Xiaowei's signature feature, get the SHAPE right: her eyes are NOT round. The upper eyelid is straight and slightly heavy, cutting flat across the top of the large blue-grey iris and drooping a little toward the outer corners; the lower lid curves round. The overall eye shape is a half-moon / a "D" rotated flat-side-up. Dark eyeliner-like rims around the eyes, small pupils, and lots of pale blue-grey iris showing. This flat-topped eye shape is what gives her the permanently mildly worried, aggrieved, innocent look. Moderately large (clearly smaller than the previous attempt), wide-set, soft catchlights. Never perfectly round (she only opens them round when startled), never huge, never sad-droopy.
+Eye edit: reshape the eyelids so the eyes are no longer perfectly round. Lower the upper eyelid into a nearly straight, slightly heavy line that cuts flat across the top of the iris — like the eye shape of a mildly worried kitten. Keep the outer and inner corners at the SAME height as the original (do NOT slant the eyes downward or upward — no sad puppy angle). The lower lid keeps its round curve. Keep the same eye position and spacing; overall eye height becomes slightly shorter because of the lowered upper lid. Show a bit more pale blue-grey iris by making the dark pupils slightly smaller. Keep the soft catchlights.
 
-3. POSE: Make the sitting pose read as timid: body slightly hunched and huddled into itself, front paws tucked close together beneath the chest ruff, shoulders low, head tilted a few degrees — like a shy kitten trying to look small. Fluffy tail curled beside the body.
+The result should read as the same cute kitten, just with her signature calm "flat-topped" worried eyes instead of wide startled round eyes — still adorable, NOT sad, NOT crying, NOT droopy.
 
-Keep everything else: very small rounded ears mostly tucked into the fluffy head fur, tiny pink nose, round chubby cheeks with fluffy cheek ruffs, short British Longhair muzzle (not a flat Persian face), chibi-leaning big-head proportions, compact round short-legged body, semi-realistic softly painted fur simplified into readable tufts so it stays clear at 192x208 pixels. No text.
-
-Place a single centered full-body pose on a perfectly flat pure magenta #FF00FF chroma-key background covering the entire canvas. Full pet visible, compact, easy to animate. No scenery, text, borders, shadows, glows, detached effects, or props. Keep #FF00FF and similar pink/magenta tones out of the fur, eyes, nose and highlights.
-
-要求：整张画布背景必须是纯平品红色 #FF00FF，无渐变无纹理；
-画面里只有一只居中的全身小猫；不要阴影、不要文字、不要特效。
-本次三个修改重点：①毛色更淡更柔的奶油金（别橘）；②眼型改成小味
-标志性的"刀刀眼"——上眼睑平直微沉、外眼角略下压、下眼睑圆弧，
-整体上平下圆的半月形，带深色眼线圈、小瞳孔、大面积蓝灰虹膜，
-不许画正圆眼；③坐姿缩成一团、前爪并拢内收，显得胆小想藏起来。
-生成后请给我原始尺寸的图片文件下载。
+要求总结：只把两只眼睛的上眼睑改平（像有点担心事情的小猫半敛着眼），
+内外眼角高度保持不变，绝不能画成外角下垂的八字哭包眼；
+瞳孔略缩小、多露一点蓝灰虹膜；其余全部不动。
+改完请给我原始尺寸的图片文件下载。
 ```
-
-**注意**：这次发 ChatGPT 时除了 4 张照片，**把上一版生成图也一起附上**
-（仓库路径 `runs/xiaowei/incoming/base-attempt-2.png`），让它知道
-"保留什么、修什么"。
 
 ## Claude 收图后的自查项（供参考）
 
