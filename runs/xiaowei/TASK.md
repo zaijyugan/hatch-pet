@@ -1,6 +1,10 @@
-# 当前任务（第 1 批：base 底图）— ChatGPT 版
+# 当前任务（第 1 批：base 底图 · 第 2 次重试）— ChatGPT 版
 
-生图改用 ChatGPT（带图像生成功能的对话）。你只需要三步：
+第 1 次结果技术合格但不够可爱、不够像小味。本次调整方向：
+**保持半写实毛发质感，但更萌（头身比更大、眼睛更大更亮、微歪头）、
+更贴近照片里的真实特征（蓬乱飞毛、深金渐层、奶白围脖、担忧的眉眼）。**
+
+生图用 ChatGPT。你只需要三步：
 
 1. **发给 ChatGPT**：把下面代码块整段复制到 ChatGPT，同时**附上 4 张小味的照片**
    （就是你拍的这 4 张：`20260720-105443(13).jpg`、`(6)`、`(10)`、`(1)`；
@@ -14,18 +18,22 @@
 ## 发给 ChatGPT 的内容（附 4 张照片一起发）
 
 ```text
-请根据我附上的 4 张真实小猫照片，生成一张桌面宠物用的角色底图。严格按以下要求：
+请根据我附上的 4 张真实小猫照片重新生成一张桌面宠物角色底图。
+上一版的问题：太像普通的"完美赛级猫"，不够可爱，也不够像照片里这只猫。
+这次请严格按以下要求：
 
-Create one clean full-body reference sprite for a desktop pet named 小味 (Xiaowei).
+Create one clean full-body character sprite of the exact kitten shown in the attached photos — a timid 4-month-old golden shaded British Longhair named 小味 (Xiaowei).
 
-Pet identity: Xiaowei is a timid 4-month-old golden shaded British Longhair kitten. Very fluffy long cream-golden fur with warmer golden-brown shaded tipping on the head, back and plumed tail; pale cream chest, muzzle and paws. Round chubby-cheeked face with a short (but not flat) muzzle, tiny pink nose, small rounded ears tucked into fur, large round blue-grey eyes with a slightly worried, shy expression. Compact round chibi-friendly body. Personality: gentle, cautious, easily startled, endearing.
+Match THIS specific kitten, not a generic kitten. Copy these features from the photos: slightly messy, wispy flyaway fur (not perfectly groomed); noticeably darker warm golden-brown shaded tipping on the top of the head, back and plumed tail; a prominent pale cream ruff on the chest and pale muzzle/paws; very small rounded ears mostly tucked into the fluffy head fur; large round blue-grey eyes with the photos' distinctive slightly-worried, shy puppy-dog gaze (soft inner-brow feel, NOT sad or droopy); tiny pink nose; round chubby cheeks with fluffy cheek ruffs; short muzzle (British Longhair, not a flat Persian face).
 
-Style: Soft cute stylized mascot rendition of the real kitten in the attached photos: keep the true fur palette (cream-golden with warm shaded tipping, pale chest), the round British Longhair face with chubby cheeks and short muzzle, worried shy eyes and fluffy silhouette; simplify fur into readable tufts so details stay clear when displayed at 192x208 pixels; no photorealism, no text. Keep this exact style reusable for future animation frames.
+Make it cuter than realistic proportions while keeping the semi-realistic soft fur rendering: enlarge the head to roughly the same size as the body (chibi-leaning head-to-body ratio), make the eyes bigger, rounder and glossier with bright catchlights, tilt the head a few degrees to one side for shy charm, keep the body compact, round and short-legged, with the fluffy tail curled up beside the body. Fur stays softly painted and fluffy but with slightly simplified, readable tufts so the character remains clear when displayed at 192x208 pixels. No text.
 
-Place a single centered standing full-body pose on a perfectly flat pure magenta #FF00FF chroma-key background covering the entire canvas. Keep the full pet visible, compact, readable at small size, and easy to animate. No scenery, text, borders, checkerboard transparency, shadows, glows, detached effects, or extra props. Keep #FF00FF and similar pink/magenta colors out of the cat's fur, eyes, nose and highlights.
+Place a single centered full-body pose on a perfectly flat pure magenta #FF00FF chroma-key background covering the entire canvas. Full pet visible, compact, easy to animate. No scenery, text, borders, shadows, glows, detached effects, or props. Keep #FF00FF and similar pink/magenta tones out of the fur, eyes, nose and highlights.
 
 要求：整张画布背景必须是纯平品红色 #FF00FF，无渐变无纹理；
 画面里只有一只居中的全身小猫；不要阴影、不要文字、不要装饰特效。
+重点：要像照片里这只猫（乱蓬蓬的飞毛、头背深金渐层、胸口奶白围脖、
+担忧又软萌的眼神），同时头更大、眼更大更亮、微微歪头，更可爱。
 生成后请给我原始尺寸的图片文件下载。
 ```
 
