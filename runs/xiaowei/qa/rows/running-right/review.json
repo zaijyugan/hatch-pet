@@ -1,0 +1,160 @@
+{
+  "ok": false,
+  "frames_root": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames",
+  "states": [
+    "running-right"
+  ],
+  "errors": [
+    "running-right frame 00 has 1037 non-transparent pixels close to the chroma key",
+    "running-right frame 01 has 900 non-transparent pixels close to the chroma key",
+    "running-right frame 02 has 916 non-transparent pixels close to the chroma key",
+    "running-right frame 03 has 933 non-transparent pixels close to the chroma key",
+    "running-right frame 04 has 869 non-transparent pixels close to the chroma key",
+    "running-right frame 05 has 983 non-transparent pixels close to the chroma key",
+    "running-right frame 06 has 879 non-transparent pixels close to the chroma key",
+    "running-right frame 07 has 965 non-transparent pixels close to the chroma key"
+  ],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": false,
+      "errors": [
+        "running-right frame 00 has 1037 non-transparent pixels close to the chroma key",
+        "running-right frame 01 has 900 non-transparent pixels close to the chroma key",
+        "running-right frame 02 has 916 non-transparent pixels close to the chroma key",
+        "running-right frame 03 has 933 non-transparent pixels close to the chroma key",
+        "running-right frame 04 has 869 non-transparent pixels close to the chroma key",
+        "running-right frame 05 has 983 non-transparent pixels close to the chroma key",
+        "running-right frame 06 has 879 non-transparent pixels close to the chroma key",
+        "running-right frame 07 has 965 non-transparent pixels close to the chroma key"
+      ],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18855,
+          "bbox": [
+            5,
+            22,
+            187,
+            185
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1037
+        },
+        {
+          "index": 1,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17337,
+          "bbox": [
+            5,
+            20,
+            187,
+            187
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 900
+        },
+        {
+          "index": 2,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17391,
+          "bbox": [
+            5,
+            21,
+            187,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 916
+        },
+        {
+          "index": 3,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18461,
+          "bbox": [
+            5,
+            14,
+            187,
+            193
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 933
+        },
+        {
+          "index": 4,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16987,
+          "bbox": [
+            5,
+            21,
+            187,
+            187
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 869
+        },
+        {
+          "index": 5,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18238,
+          "bbox": [
+            5,
+            17,
+            187,
+            191
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 983
+        },
+        {
+          "index": 6,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17217,
+          "bbox": [
+            5,
+            21,
+            187,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 879
+        },
+        {
+          "index": 7,
+          "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19148,
+          "bbox": [
+            5,
+            13,
+            187,
+            195
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 965
+        }
+      ]
+    }
+  ]
+}

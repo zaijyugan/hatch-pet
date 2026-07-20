@@ -89,7 +89,7 @@
     {
       "id": "running-right",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/running-right.md",
       "retry_prompt_file": "prompts/row-retries/running-right.md",
       "input_images": [
@@ -135,12 +135,14 @@
         "may_derive": false,
         "reason": "no deterministic derivation is configured for this state"
       },
-      "mirror_policy": {}
+      "mirror_policy": {},
+      "source_path": "incoming/running-right.png",
+      "completed_at": "2026-07-20T07:33:01Z"
     },
     {
       "id": "running-left",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/running-left.md",
       "retry_prompt_file": "prompts/row-retries/running-left.md",
       "input_images": [
@@ -201,6 +203,21 @@
         "derivation": "framewise-horizontal-mirror-preserving-order",
         "requires_explicit_approval": true,
         "fallback_generation_skill": "$imagegen"
+      },
+      "source_path": "decoded/running-left.png (mirror-derived)",
+      "derived_from": "running-right",
+      "completed_at": "2026-07-20T07:33:12Z",
+      "metadata": {
+        "width": 2048,
+        "height": 1152,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "mirror_decision": {
+        "approved": true,
+        "approved_at": "2026-07-20T07:33:02.212865+00:00",
+        "note": "Xiaowei is bilaterally symmetric: no asymmetric markings, props, or text; fur shading is even on both sides, so mirroring preserves identity and direction semantics.",
+        "transform": "framewise-horizontal-mirror-preserving-order"
       }
     },
     {
