@@ -5,14 +5,10 @@
     "running-right"
   ],
   "errors": [
-    "running-right frame 00 has 1037 non-transparent pixels close to the chroma key",
-    "running-right frame 01 has 900 non-transparent pixels close to the chroma key",
-    "running-right frame 02 has 916 non-transparent pixels close to the chroma key",
-    "running-right frame 03 has 933 non-transparent pixels close to the chroma key",
-    "running-right frame 04 has 869 non-transparent pixels close to the chroma key",
-    "running-right frame 05 has 983 non-transparent pixels close to the chroma key",
-    "running-right frame 06 has 879 non-transparent pixels close to the chroma key",
-    "running-right frame 07 has 965 non-transparent pixels close to the chroma key"
+    "running-right frame 00 has 877 non-transparent pixels close to the chroma key",
+    "running-right frame 01 has 830 non-transparent pixels close to the chroma key",
+    "running-right frame 05 has 810 non-transparent pixels close to the chroma key",
+    "running-right frame 06 has 808 non-transparent pixels close to the chroma key"
   ],
   "warnings": [],
   "rows": [
@@ -23,14 +19,10 @@
       "extraction_method": "components",
       "ok": false,
       "errors": [
-        "running-right frame 00 has 1037 non-transparent pixels close to the chroma key",
-        "running-right frame 01 has 900 non-transparent pixels close to the chroma key",
-        "running-right frame 02 has 916 non-transparent pixels close to the chroma key",
-        "running-right frame 03 has 933 non-transparent pixels close to the chroma key",
-        "running-right frame 04 has 869 non-transparent pixels close to the chroma key",
-        "running-right frame 05 has 983 non-transparent pixels close to the chroma key",
-        "running-right frame 06 has 879 non-transparent pixels close to the chroma key",
-        "running-right frame 07 has 965 non-transparent pixels close to the chroma key"
+        "running-right frame 00 has 877 non-transparent pixels close to the chroma key",
+        "running-right frame 01 has 830 non-transparent pixels close to the chroma key",
+        "running-right frame 05 has 810 non-transparent pixels close to the chroma key",
+        "running-right frame 06 has 808 non-transparent pixels close to the chroma key"
       ],
       "warnings": [],
       "frames": [
@@ -39,120 +31,120 @@
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 18855,
+          "nontransparent_pixels": 18266,
           "bbox": [
             5,
-            22,
+            27,
             187,
-            185
+            181
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1037
+          "chroma_adjacent_pixels": 877
         },
         {
           "index": 1,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17337,
+          "nontransparent_pixels": 17468,
           "bbox": [
             5,
-            20,
+            26,
             187,
-            187
+            181
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 900
+          "chroma_adjacent_pixels": 830
         },
         {
           "index": 2,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17391,
+          "nontransparent_pixels": 14307,
           "bbox": [
             5,
-            21,
+            34,
             187,
-            186
+            174
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 916
+          "chroma_adjacent_pixels": 761
         },
         {
           "index": 3,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 18461,
+          "nontransparent_pixels": 15839,
           "bbox": [
             5,
-            14,
+            23,
             187,
-            193
+            185
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 933
+          "chroma_adjacent_pixels": 723
         },
         {
           "index": 4,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16987,
+          "nontransparent_pixels": 15000,
           "bbox": [
             5,
-            21,
+            28,
             187,
-            187
+            180
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 869
+          "chroma_adjacent_pixels": 767
         },
         {
           "index": 5,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 18238,
+          "nontransparent_pixels": 15905,
           "bbox": [
             5,
-            17,
+            23,
             187,
-            191
+            184
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 983
+          "chroma_adjacent_pixels": 810
         },
         {
           "index": 6,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17217,
+          "nontransparent_pixels": 18579,
           "bbox": [
             5,
-            21,
+            16,
             187,
-            186
+            192
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 879
+          "chroma_adjacent_pixels": 808
         },
         {
           "index": 7,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-right/frames/running-right/07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 19148,
+          "nontransparent_pixels": 16608,
           "bbox": [
             5,
-            13,
+            23,
             187,
-            195
+            184
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 965
+          "chroma_adjacent_pixels": 786
         }
       ]
     }

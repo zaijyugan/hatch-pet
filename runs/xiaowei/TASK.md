@@ -1,34 +1,7 @@
-# 当前任务：running-right 重做 + 第 3 批六条动画条 — ChatGPT 版
+# 当前任务：第 3 批六条动画条 — ChatGPT 版
 
-进度：base ✅ · idle ✅ · running-right ⚠️ 重做中 · running-left（随 running-right 自动重派生）
-
----
-
-## 任务 2b-重试：running-right.png（8 帧向右跑 · 调整头身比）
-
-第 1 版侧面跑姿头显得过大（大头娃娃感）。本次调整：**头和脸完全不变，
-身体在侧面拉长一点**，跑姿更自然。
-
-附：`canonical-base.png` + `layout-guides/running-right.png`
-
-```text
-请生成一张横向长条动画帧图（宽横版画布）。附图 1 是角色身份基准，附图 2 只用于理解 8 个等宽格子的排版（不要画出格子线）。
-
-Create one horizontal animation strip: exactly 8 full-body frames of the attached kitten character, left to right, evenly spaced in 8 invisible equal-width slots, one centered pose per slot, no overlap or clipping, on a perfectly flat pure magenta #FF00FF background.
-
-Identity: EXACTLY the same kitten as image 1 — same fur, colors, face, head, eyes and painting style. PROPORTION ADJUSTMENT for the running pose only: in side view the body should be visibly longer than in the seated base image — head-to-body ratio around 1:1.2 to 1:1.3 (body slightly longer than the head is tall), like a real kitten stretching out mid-run. Do NOT shrink or change the head/face itself; extend the torso and legs instead. The result must still read as the same chibi kitten, just stretched naturally into a run.
-
-State: running-right — scurrying to the RIGHT. Every frame faces right (nose, eyes and body pointing to the viewer's right) and reads as traveling right. Show the run through body and leg poses only: alternating gait across the 8 frames — legs extend and gather in different phases (reach, pull, tuck, push), body leans slightly forward, fluffy fur and tail follow with a slight lag. The 8 frames form one smooth cycle (frame 8 leads back into frame 1) and leg positions clearly DIFFER between neighboring frames.
-
-Keep the same apparent size and ground baseline in all frames. Do NOT draw speed lines, dust, motion trails, blur, floor shadows or any detached effects; no text, borders, scenery. Keep magenta/pink out of the kitten.
-
-要求：8 帧一行、等距不重叠、纯平品红背景；全部朝右、明显向右跑；
-头和脸保持与 base 一致，但侧面身体拉长到约头高的 1.2~1.3 倍，
-跑姿自然舒展；相邻帧腿部姿势明显不同、8 帧成循环；大小和地面
-基线一致。生成后给我原始尺寸文件下载。
-```
-
-生成后命名 `running-right.png` 上传覆盖，Claude 验收后会自动重新镜像 running-left。
+进度：base ✅ · idle ✅ · running-right ✅（v2 拉长身体版定稿）· running-left ✅（已重新镜像）
+标准动画行还差六条，全在下面，可并行。
 
 ---
 

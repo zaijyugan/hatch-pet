@@ -139,7 +139,7 @@
       },
       "mirror_policy": {},
       "source_path": "incoming/running-right.png",
-      "completed_at": "2026-07-20T07:33:01Z"
+      "completed_at": "2026-07-20T09:14:10Z"
     },
     {
       "id": "running-left",
@@ -206,9 +206,9 @@
         "requires_explicit_approval": true,
         "fallback_generation_skill": "$imagegen"
       },
-      "source_path": "decoded/running-left.png (mirror-derived)",
+      "source_path": "decoded/running-right.png",
       "derived_from": "running-right",
-      "completed_at": "2026-07-20T07:33:12Z",
+      "completed_at": "2026-07-20T09:14:21.264947+00:00",
       "metadata": {
         "width": 2048,
         "height": 1152,
@@ -217,8 +217,8 @@
       },
       "mirror_decision": {
         "approved": true,
-        "approved_at": "2026-07-20T07:33:02.212865+00:00",
-        "note": "Xiaowei is bilaterally symmetric: no asymmetric markings, props, or text; fur shading is even on both sides, so mirroring preserves identity and direction semantics.",
+        "approved_at": "2026-07-20T09:14:21.264947+00:00",
+        "note": "Regenerated running-right (longer body) is bilaterally symmetric with no asymmetric props or markings; mirroring preserves identity and direction semantics.",
         "transform": "framewise-horizontal-mirror-preserving-order"
       }
     },

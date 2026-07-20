@@ -5,14 +5,9 @@
     "running-left"
   ],
   "errors": [
-    "running-left frame 00 has 1132 non-transparent pixels close to the chroma key",
-    "running-left frame 01 has 841 non-transparent pixels close to the chroma key",
-    "running-left frame 02 has 923 non-transparent pixels close to the chroma key",
-    "running-left frame 03 has 959 non-transparent pixels close to the chroma key",
-    "running-left frame 04 has 907 non-transparent pixels close to the chroma key",
-    "running-left frame 05 has 903 non-transparent pixels close to the chroma key",
-    "running-left frame 06 has 911 non-transparent pixels close to the chroma key",
-    "running-left frame 07 has 1056 non-transparent pixels close to the chroma key"
+    "running-left frame 00 has 888 non-transparent pixels close to the chroma key",
+    "running-left frame 01 has 805 non-transparent pixels close to the chroma key",
+    "running-left frame 02 has 830 non-transparent pixels close to the chroma key"
   ],
   "warnings": [],
   "rows": [
@@ -23,14 +18,9 @@
       "extraction_method": "components",
       "ok": false,
       "errors": [
-        "running-left frame 00 has 1132 non-transparent pixels close to the chroma key",
-        "running-left frame 01 has 841 non-transparent pixels close to the chroma key",
-        "running-left frame 02 has 923 non-transparent pixels close to the chroma key",
-        "running-left frame 03 has 959 non-transparent pixels close to the chroma key",
-        "running-left frame 04 has 907 non-transparent pixels close to the chroma key",
-        "running-left frame 05 has 903 non-transparent pixels close to the chroma key",
-        "running-left frame 06 has 911 non-transparent pixels close to the chroma key",
-        "running-left frame 07 has 1056 non-transparent pixels close to the chroma key"
+        "running-left frame 00 has 888 non-transparent pixels close to the chroma key",
+        "running-left frame 01 has 805 non-transparent pixels close to the chroma key",
+        "running-left frame 02 has 830 non-transparent pixels close to the chroma key"
       ],
       "warnings": [],
       "frames": [
@@ -39,120 +29,120 @@
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 23647,
+          "nontransparent_pixels": 20140,
           "bbox": [
             5,
-            5,
+            20,
             187,
-            202
+            187
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1132
+          "chroma_adjacent_pixels": 888
         },
         {
           "index": 1,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 19842,
+          "nontransparent_pixels": 19651,
           "bbox": [
-            10,
             5,
-            182,
-            203
+            18,
+            187,
+            190
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 841
+          "chroma_adjacent_pixels": 805
         },
         {
           "index": 2,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17455,
+          "nontransparent_pixels": 15805,
           "bbox": [
             5,
-            19,
+            23,
             187,
-            189
+            185
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 923
+          "chroma_adjacent_pixels": 830
         },
         {
           "index": 3,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 18333,
+          "nontransparent_pixels": 16783,
           "bbox": [
             5,
-            16,
+            20,
             187,
-            191
+            188
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 959
+          "chroma_adjacent_pixels": 785
         },
         {
           "index": 4,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16992,
+          "nontransparent_pixels": 15253,
           "bbox": [
             5,
-            23,
+            29,
             187,
-            184
+            178
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 907
+          "chroma_adjacent_pixels": 764
         },
         {
           "index": 5,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16543,
+          "nontransparent_pixels": 15334,
           "bbox": [
             5,
-            25,
+            24,
             187,
-            182
+            184
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 903
+          "chroma_adjacent_pixels": 760
         },
         {
           "index": 6,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16124,
+          "nontransparent_pixels": 15676,
           "bbox": [
             5,
-            31,
+            30,
             187,
             177
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 911
+          "chroma_adjacent_pixels": 776
         },
         {
           "index": 7,
           "file": "/home/user/hatch-pet/runs/xiaowei/qa/rows/running-left/frames/running-left/07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 19627,
+          "nontransparent_pixels": 14813,
           "bbox": [
             5,
-            12,
+            33,
             187,
-            195
+            174
           ],
           "edge_pixels": 0,
-          "chroma_adjacent_pixels": 1056
+          "chroma_adjacent_pixels": 774
         }
       ]
     }
