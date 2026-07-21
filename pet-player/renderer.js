@@ -4,20 +4,20 @@ const path = require('path');
 
 const CELL_W = 192, CELL_H = 208;
 // 标准 9 行的状态与帧数（v2 图的 9、10 行是视线方向，播放器不使用）
+// mode: 'breathe' = 播一轮后长停顿（待机）; 'once' = 播一遍回到 idle; 'loop' = 持续循环
 const ROWS = [
-  { name: 'idle',          row: 0, frames: 6 },
-  { name: 'running-right', row: 1, frames: 8 },
-  { name: 'running-left',  row: 2, frames: 8 },
-  { name: 'waving',        row: 3, frames: 4 },
-  { name: 'jumping',       row: 4, frames: 5 },
-  { name: 'failed',        row: 5, frames: 8 },
-  { name: 'waiting',       row: 6, frames: 6 },
-  { name: 'running',       row: 7, frames: 6 },
-  { name: 'review',        row: 8, frames: 6 },
+  { name: 'idle',          row: 0, frames: 6, fps: 4, mode: 'breathe' },
+  { name: 'running-right', row: 1, frames: 8, fps: 8, mode: 'loop' },
+  { name: 'running-left',  row: 2, frames: 8, fps: 8, mode: 'loop' },
+  { name: 'waving',        row: 3, frames: 4, fps: 5, mode: 'once' },
+  { name: 'jumping',       row: 4, frames: 5, fps: 6, mode: 'once' },
+  { name: 'failed',        row: 5, frames: 8, fps: 4, mode: 'once' },
+  { name: 'waiting',       row: 6, frames: 6, fps: 3, mode: 'loop' },
+  { name: 'running',       row: 7, frames: 6, fps: 5, mode: 'loop' },
+  { name: 'review',        row: 8, frames: 6, fps: 3, mode: 'loop' },
 ];
 // 单击循环切换的状态顺序
 const CLICK_CYCLE = ['idle', 'waving', 'jumping', 'failed', 'waiting', 'running', 'review'];
-const FPS = 8;
 
 const petDir = new URLSearchParams(location.search).get('pet');
 const manifest = JSON.parse(fs.readFileSync(path.join(petDir, 'pet.json'), 'utf8'));
@@ -33,6 +33,8 @@ const ctx = canvas.getContext('2d');
 let state = 'idle';
 let frame = 0;
 let lastSwap = 0;
+let pauseUntil = 0;   // breathe 模式的停顿截止时间
+let needsDraw = true;
 
 const img = new Image();
 img.src = 'file://' + sheetPath;
@@ -50,22 +52,45 @@ function applyScale() {
 }
 
 function setState(name) {
-  if (state !== name) { state = name; frame = 0; }
+  if (state !== name) { state = name; frame = 0; pauseUntil = 0; needsDraw = true; }
+}
+
+function draw(info) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(
+    img,
+    frame * CELL_W, info.row * CELL_H, CELL_W, CELL_H,
+    0, 0, canvas.width, canvas.height
+  );
 }
 
 function tick(now) {
-  if (now - lastSwap > 1000 / FPS) {
+  const info = rowInfo(state);
+  if (needsDraw) { needsDraw = false; lastSwap = now; draw(info); }
+  if (now >= pauseUntil && now - lastSwap > 1000 / info.fps) {
     lastSwap = now;
-    const info = rowInfo(state);
-    frame = (frame + 1) % info.frames;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.imageSmoothingEnabled = true;
-    ctx.imageSmoothingQuality = 'high';
-    ctx.drawImage(
-      img,
-      frame * CELL_W, info.row * CELL_H, CELL_W, CELL_H,
-      0, 0, canvas.width, canvas.height
-    );
+    const next = frame + 1;
+    if (next >= info.frames) {
+      if (info.mode === 'once') {
+        // 动作播完，回到待机
+        state = 'idle'; frame = 0;
+        pauseUntil = now + 1500;
+        draw(rowInfo('idle'));
+      } else if (info.mode === 'breathe') {
+        // 待机：播完一轮呼吸后停在第 1 帧，随机停顿 3-7 秒
+        frame = 0;
+        pauseUntil = now + 3000 + Math.random() * 4000;
+        draw(info);
+      } else {
+        frame = 0;
+        draw(info);
+      }
+    } else {
+      frame = next;
+      draw(info);
+    }
   }
   requestAnimationFrame(tick);
 }
