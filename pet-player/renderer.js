@@ -23,7 +23,10 @@ const petDir = new URLSearchParams(location.search).get('pet');
 const manifest = JSON.parse(fs.readFileSync(path.join(petDir, 'pet.json'), 'utf8'));
 const sheetPath = path.join(petDir, manifest.spritesheetPath || 'spritesheet.webp');
 
-let scale = 1;
+// 可用缩放档位（0.5x 最小），用 + / - 切换，选择会被记住
+const SCALES = [0.5, 0.65, 0.8, 1, 1.5, 2, 3];
+let scaleIdx = parseInt(localStorage.getItem('petScaleIdx') ?? '3', 10);
+if (isNaN(scaleIdx) || scaleIdx < 0 || scaleIdx >= SCALES.length) scaleIdx = 3;
 const canvas = document.getElementById('pet');
 const ctx = canvas.getContext('2d');
 
@@ -37,9 +40,13 @@ img.src = 'file://' + sheetPath;
 function rowInfo(name) { return ROWS.find(r => r.name === name); }
 
 function applyScale() {
-  canvas.width = CELL_W * scale;
-  canvas.height = CELL_H * scale;
-  ipcRenderer.send('resize', CELL_W * scale, CELL_H * scale);
+  const scale = SCALES[scaleIdx];
+  const w = Math.round(CELL_W * scale);
+  const h = Math.round(CELL_H * scale);
+  canvas.width = w;
+  canvas.height = h;
+  localStorage.setItem('petScaleIdx', String(scaleIdx));
+  ipcRenderer.send('resize', w, h);
 }
 
 function setState(name) {
@@ -53,10 +60,11 @@ function tick(now) {
     frame = (frame + 1) % info.frames;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
     ctx.drawImage(
       img,
       frame * CELL_W, info.row * CELL_H, CELL_W, CELL_H,
-      0, 0, CELL_W * scale, CELL_H * scale
+      0, 0, canvas.width, canvas.height
     );
   }
   requestAnimationFrame(tick);
@@ -108,8 +116,8 @@ window.addEventListener('mouseup', () => {
 // —— 键盘 ——
 window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') ipcRenderer.send('quit');
-  else if (e.key === '=' || e.key === '+') { scale = Math.min(3, scale + 1); applyScale(); }
-  else if (e.key === '-') { scale = Math.max(1, scale - 1); applyScale(); }
+  else if (e.key === '=' || e.key === '+') { scaleIdx = Math.min(SCALES.length - 1, scaleIdx + 1); applyScale(); }
+  else if (e.key === '-') { scaleIdx = Math.max(0, scaleIdx - 1); applyScale(); }
   else {
     const n = parseInt(e.key, 10);
     if (n >= 1 && n <= 9) setState(ROWS[n - 1].name);
