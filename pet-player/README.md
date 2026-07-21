@@ -11,7 +11,7 @@
 ```bash
 cd pet-player
 npm install
-npm start                      # 默认播放 ../mochi-pet
+npm start                      # 默认播放 ../mochi-a
 npm start -- /path/to/pets/xxx # 播放其他宠物目录（内含 pet.json + spritesheet）
 ```
 

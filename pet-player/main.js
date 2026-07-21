@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 let win;
-const petDir = path.resolve(process.argv[2] || path.join(__dirname, '..', 'mochi-pet'));
+const petDir = path.resolve(process.argv[2] || path.join(__dirname, '..', 'mochi-a'));
 
 function createWindow() {
   win = new BrowserWindow({
