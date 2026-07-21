@@ -1,8 +1,0 @@
-{
-  "visual_qa": "pass",
-  "qa_note": "All eleven rows are cohesive and clean; the replaced running-left gait is complete, grounded, screen-left-facing, and retains its three charcoal tail rings plus dark tip.",
-  "direction_semantics": "000 pass; 022.5 pass; 045 pass; 067.5 pass; 090 pass; 112.5 warning; 135 warning; 157.5 warning; 180 pass; 202.5 pass; 225 pass; 247.5 pass; 270 pass; 292.5 pass; 315 pass; 337.5 warning",
-  "review_warnings": "Blind vertical ambiguity at 112.5 and 135 accepted by labeled loop; continuity metric outliers at 112.5->135, 135->157.5, 157.5->180, 202.5->225, and 337.5->000 accepted after visual continuity review.",
-  "repair_rows": "none",
-  "repair_notes": "none"
-}
