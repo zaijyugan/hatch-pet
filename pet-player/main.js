@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, screen } = require('electron');
 const path = require('path');
 
 let win;
@@ -32,6 +32,13 @@ ipcMain.on('resize', (e, w, h) => {
 });
 
 ipcMain.on('quit', () => app.quit());
+
+// 供漫游行为查询窗口位置与屏幕可用范围
+ipcMain.handle('get-bounds', () => {
+  const [x, y] = win.getPosition();
+  const work = screen.getPrimaryDisplay().workArea;
+  return { x, y, work };
+});
 
 app.whenReady().then(createWindow);
 app.on('window-all-closed', () => app.quit());
