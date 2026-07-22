@@ -1,6 +1,15 @@
 const { app, BrowserWindow, ipcMain, screen } = require('electron');
 const path = require('path');
 
+// 本播放器完全本地运行，无需联网。关闭 Chromium 后台联网/遥测，
+// 避免在离线或受限网络下打印一堆无害的 SSL/net_error 红字。
+app.commandLine.appendSwitch('disable-features', 'OptimizationHints,MediaRouter,Translate,DialMediaRouteProvider');
+app.commandLine.appendSwitch('disable-component-update');
+app.commandLine.appendSwitch('disable-domain-reliability');
+app.commandLine.appendSwitch('disable-background-networking');
+app.commandLine.appendSwitch('metrics-recording-only');
+app.commandLine.appendSwitch('log-level', '3');
+
 let win;
 const petDir = path.resolve(process.argv[2] || path.join(__dirname, '..', 'mochi-a'));
 
