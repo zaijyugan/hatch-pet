@@ -20,12 +20,21 @@ if not exist node_modules (
 
 rem 有些 npm 会拦截安装脚本，导致 Electron 本体没被下载。这里手动补下载。
 if not exist "node_modules\electron\dist\electron.exe" (
-  echo Downloading Electron runtime, please wait...
+  echo Downloading Electron runtime, please wait 1-2 minutes...
   node "node_modules\electron\install.js"
 )
 
+if not exist "node_modules\electron\dist\electron.exe" (
+  echo.
+  echo [!] Electron runtime is missing and could not be downloaded.
+  echo [!] Please check your network then run this file again.
+  pause
+  exit /b 1
+)
+
 echo Starting pet...
-call npm start > "%~dp0pet-log.txt" 2>&1
+rem 直接用 Electron 本体启动，绕开 npm 的命令查找问题
+"node_modules\electron\dist\electron.exe" . > "%~dp0pet-log.txt" 2>&1
 
 echo.
 echo ============================================================
