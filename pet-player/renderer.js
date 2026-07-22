@@ -1,6 +1,7 @@
 const { ipcRenderer } = require('electron');
 const fs = require('fs');
 const path = require('path');
+const { pathToFileURL } = require('url');
 
 const CELL_W = 192, CELL_H = 208;
 // mode: 'breathe' = 播一轮后长停顿（待机）; 'once' = 播一遍回到 idle; 'loop' = 持续循环
@@ -43,7 +44,13 @@ let wander = null;       // 漫游中：{dir:1|-1, remaining:px}
 let dragging = false;
 
 const img = new Image();
-img.src = 'file://' + sheetPath;
+// 用 pathToFileURL 正确处理 Windows 盘符路径（file:///C:/...），
+// 直接拼 'file://' + 路径在 Windows 上会失败导致图片加载不出来。
+img.src = pathToFileURL(sheetPath).href;
+img.onerror = () => {
+  document.body.style.background = 'rgba(255,0,0,0.15)';
+  console.error('无法加载 spritesheet:', sheetPath);
+};
 
 function rowInfo(name) { return ROWS.find(r => r.name === name); }
 function rand(a, b) { return a + Math.random() * (b - a); }
