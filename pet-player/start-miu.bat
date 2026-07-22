@@ -16,7 +16,7 @@ if not exist node_modules (
 )
 
 echo Starting Miu...
-call npm start -- "%~dp0..\miu" > "%~dp0pet-log.txt" 2>&1
+call npm start > "%~dp0pet-log.txt" 2>&1
 
 echo.
 echo ============================================================

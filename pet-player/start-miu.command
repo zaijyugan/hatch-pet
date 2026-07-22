@@ -10,4 +10,4 @@ if [ ! -d node_modules ]; then
   echo "首次运行，正在安装依赖（约 1-2 分钟）..."
   npm install
 fi
-npm start -- "$(cd .. && pwd)/miu"
+npm start
