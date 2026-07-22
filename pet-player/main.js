@@ -38,9 +38,11 @@ function resolvePetDir() {
 const petDir = resolvePetDir();
 
 function createWindow() {
+  console.log('[pet] pet dir =', petDir);
   win = new BrowserWindow({
     width: 192,
     height: 208,
+    center: true,
     transparent: true,
     frame: false,
     alwaysOnTop: true,
@@ -52,6 +54,9 @@ function createWindow() {
       contextIsolation: false,
     },
   });
+  win.webContents.on('did-finish-load', () => console.log('[pet] page loaded OK'));
+  win.webContents.on('did-fail-load', (e, code, desc) => console.error('[pet] page FAILED to load:', code, desc));
+  win.webContents.on('render-process-gone', (e, d) => console.error('[pet] renderer gone:', JSON.stringify(d)));
   win.loadFile('index.html', { query: { pet: petDir } });
 }
 
